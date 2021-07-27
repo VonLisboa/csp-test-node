@@ -1,0 +1,223 @@
+_type: export
+__export_format: 4
+__export_date: 2021-07-27T18:13:16.228Z
+__export_source: insomnia.desktop.app:v2021.4.1
+resources:
+  - _id: req_14a2c6bfc39b45529944dacb5b1cc053
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627409332028
+    created: 1627351399647
+    url: localhost:8080/contatos/
+    name: contatos
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+        	
+        	"firstname": "rafael",
+        	"lastname": "gomes",
+        	"email": "rafgomess@gmail.com",
+        	"telefones": [
+        		{"telNumber": "000-000"}
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c8a9724be45048688236220226667411
+    authentication: {}
+    metaSortKey: -1627351399647
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    parentId: null
+    modified: 1627409484387
+    created: 1627351326640
+    name: CSP Collection
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_2d85feb4efd242018734a6fc2ccb6f01
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627409366473
+    created: 1627353090384
+    url: localhost:8080/contatos/
+    name: contatos
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c8a9724be45048688236220226667411
+    authentication: {}
+    metaSortKey: -1627351399597
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4f31b29fa27a4c3d986eea06f0de1b10
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627409382825
+    created: 1627355213340
+    url: localhost:8080/contatos/nome/rafael gomes
+    name: contatos by nome
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c8a9724be45048688236220226667411
+    authentication: {}
+    metaSortKey: -1627351399572
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cf691a72ab5347268bf41260917469a4
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627409401034
+    created: 1627355069756
+    url: localhost:8080/contatos/email/rafgomess@gmail.com
+    name: contatos by email
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c8a9724be45048688236220226667411
+    authentication: {}
+    metaSortKey: -1627351399565.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2ddf6feffd8b40d2a787c6940660f753
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627407842645
+    created: 1627398814607
+    url: localhost:8080/contatos/8
+    name: contatos
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"firstname": "rafael",
+        	"lastname": "gomes",
+        	"email": "rafgomes@gmail.com",
+        	"createdAt": "2021-07-27T02:24:29.000Z",
+        	"updatedAt": "2021-07-27T02:24:29.000Z",
+        	"telefones": [{"telNumber": "100-000"}, {"telNumber": "400-000"}]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c8a9724be45048688236220226667411
+    authentication: {}
+    metaSortKey: -1627351399559.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2266be87348049c882309b3c079d1d37
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627407929051
+    created: 1627400547078
+    url: localhost:8080/contatos/3
+    name: contatos
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c8a9724be45048688236220226667411
+    authentication: {}
+    metaSortKey: -1627351399509.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_b2c4bd6093991ed467cef20f8df0cb5fc3a7adce
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627351326715
+    created: 1627351326715
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1627351326715
+    _type: environment
+  - _id: jar_b2c4bd6093991ed467cef20f8df0cb5fc3a7adce
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627351326716
+    created: 1627351326716
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_25f16e961bed4268844947b47096d7a0
+    parentId: wrk_44fa70fd10b44adeb1c10ad4ed3b6c6f
+    modified: 1627351326645
+    created: 1627351326645
+    fileName: My Collection
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_01fde9840d704eb5a3a553edd98fa688
+    parentId: env_b2c4bd6093991ed467cef20f8df0cb5fc3a7adce
+    modified: 1627351629990
+    created: 1627351629990
+    name: New Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1627351629990
+    _type: environment

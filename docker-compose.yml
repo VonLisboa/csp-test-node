@@ -1,0 +1,31 @@
+version: "3.3"
+services:
+  csp_backend:
+    container_name: csp_backend
+    image: francescoxx/nsp-template:0.0.2
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    environment:
+      - EXTERNAL_PORT=8080
+      - USER=admin
+      - PASS=1234
+      - DB=db_agenda
+      - HOST=db_mysql
+    depends_on:
+      - db_mysql
+  db_mysql:
+    container_name: db_mysql
+    image: "mysql:5.7"
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=1234
+      - MYSQL_ROOT_PASSWORD=toor
+      - MYSQL_DATABASE=db_agenda
+    volumes:
+      - my_db_vol:/var/lib/mysql
+volumes:
+  my_db_vol: {}
